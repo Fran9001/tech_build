@@ -12,6 +12,7 @@ export default function MobileProfile() {
         <div
           tabIndex={0}
           role="button"
+          aria-label="Menu"
           className="btn btn-ghost btn-circle hover:bg-transparent"
           onClick={toggleDropdown}
         >
@@ -38,6 +39,7 @@ export default function MobileProfile() {
             <li className="mb-2 hover:text-stone-900 hover:bg-green-300 duration-300 rounded-lg">
               <Link
                 href="/"
+                aria-label="Inicio"
                 className="active:!bg-green-200 active:!text-stone-900 focus:bg-zinc-200 focus:text-stone-900 dark:focus:bg-stone-700 dark:focus:text-zinc-200"
               >
                 <svg
@@ -130,6 +132,7 @@ export default function MobileProfile() {
             <li className="mb-2 hover:text-stone-900 hover:bg-green-300 duration-300 rounded-lg">
               <Link
                 href="/about"
+                aria-label="Sobre nosotros"
                 className="active:!bg-green-200 active:!text-stone-900 focus:bg-zinc-200 focus:text-stone-900 dark:focus:bg-stone-700 dark:focus:text-zinc-200"
               >
                 <svg
@@ -146,6 +149,7 @@ export default function MobileProfile() {
             <li className="hover:text-stone-900 hover:bg-green-300 duration-300 rounded-lg">
               <Link
                 href="/contact"
+                aria-label="Contáctanos"
                 className="active:!bg-green-200 active:!text-stone-900 focus:bg-zinc-200 focus:text-stone-900 dark:focus:bg-stone-700 dark:focus:text-zinc-200"
               >
                 <svg

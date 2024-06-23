@@ -13,8 +13,9 @@ export default function Navbar() {
       <div className="navbar bg-zinc-300 dark:bg-stone-900 flex justify-between sm:justify-center">
         {/* Name/Logo */}
         <div>
-          <a
-            href="#"
+          <Link
+            href="/"
+            aria-label="Logo"
             className="px-0 mr-2 sm:px-2 btn btn-ghost text-xl text-stone-800 hover:bg-transparent"
           >
             <svg
@@ -48,7 +49,7 @@ export default function Navbar() {
                 <path d="M2750 215 l0 -105 64 0 c59 0 67 3 95 31 24 23 31 40 31 68 0 69 -53 111 -140 111 l-50 0 0 -105z m112 38 c20 -18 24 -63 6 -81 -7 -7 -22 -12 -35 -12 -21 0 -23 4 -23 55 0 60 15 71 52 38z" />
               </g>
             </svg>
-          </a>
+          </Link>
         </div>
 
         {/* Search bar */}
@@ -58,7 +59,7 @@ export default function Navbar() {
             placeholder="Buscar productos o marcas"
             className="input bg-zinc-300 dark:bg-stone-800 border-stone-500 placeholder:text-stone-400 text-stone-800 dark:text-zinc-200 w-full h-full rounded-e-none focus:outline-0 focus:border-stone-500"
           />
-          <button className="btn bg-stone-800 dark:bg-zinc-200 pl-2 pr-2 min-h-1 h-full rounded-s-none border-none hover:bg-stone-700 dark:hover:bg-stone-300">
+          <button aria-label="Search" className="btn bg-stone-800 dark:bg-zinc-200 pl-2 pr-2 min-h-1 h-full rounded-s-none border-none hover:bg-stone-700 dark:hover:bg-stone-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

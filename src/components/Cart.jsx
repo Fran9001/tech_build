@@ -47,7 +47,7 @@ export default function Cart () {
                     Subtotal: $000
                   </span>
                   <div className="card-actions">
-                    <button className="btn bg-green-400 text-stone-800 hover:bg-green-300 duration-500 btn-block active:!bg-green-500 active:!text-stone-900">
+                    <button aria-label="Carrito de compras" className="btn bg-green-400 text-stone-800 hover:bg-green-300 duration-500 btn-block active:!bg-green-500 active:!text-stone-900">
                       Ver Carrito
                     </button>
                   </div>

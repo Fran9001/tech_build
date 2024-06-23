@@ -11,6 +11,7 @@ export default function Categories() {
             <div
               tabIndex={0}
               role="button"
+              aria-label="Categorías"
               className="btn m-1 bg-stone-900 focus:bg-transparent hover:bg-stone-900 dark:bg-stone-700 dark:hover:bg-stone-700 text-zinc-200 text-base border-none"
               onClick={toggleDropdown}
             >

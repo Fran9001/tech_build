@@ -21,9 +21,10 @@ export default function ThemeToggle() {
   };
 
   return (
-    <label className="swap swap-rotate relative ml-1">
+    <label for="Toggle theme" className="swap swap-rotate relative ml-1">
       <input
         type="checkbox"
+        id="Toggle theme"
         onChange={handleToggle}
         checked={theme === "dark"}
       />
