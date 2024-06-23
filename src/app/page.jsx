@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Hero from "@/components/Hero";
-import Carousel from "@/components/Carousel";
+import Carousel from "@/components/Carousel/Carousel";
 
 const Home = () => {
   return (
