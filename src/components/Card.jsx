@@ -6,11 +6,11 @@ export default function Card({ product }) {
       <div className="shadow-2xl rounded-lg overflow-hidden">
         <div className="relative w-full h-72 bg-white">
           <Image
-            src={product.pictures.grid.normal}
-            alt={product.pictures.grid.tags.alt}
+            src={product.image}
+            alt={product.title}
             fill
             sizes="(100vw - 2rem) 20rem, 20rem"
-            style={{objectFit:"contain"}}
+            style={{ objectFit: "contain" }}
             priority
           />
         </div>
@@ -23,7 +23,7 @@ export default function Card({ product }) {
           </h3>
           <div className="flex justify-between items-end">
             <p className="text-lg font-bold text-green-600 dark:text-green-300">
-              $ {product.price.amount}
+              $ {product.price}
             </p>
             <button
               title="Agregar al carrito"

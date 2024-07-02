@@ -21,7 +21,7 @@ export default function ThemeToggle() {
   };
 
   return (
-    <label for="Toggle theme" className="swap swap-rotate relative ml-1">
+    <label htmlFor="Toggle theme" className="swap swap-rotate relative ml-1">
       <input
         type="checkbox"
         id="Toggle theme"

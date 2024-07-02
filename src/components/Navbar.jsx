@@ -85,7 +85,12 @@ export default function Navbar() {
       {/* Bottom navbar */}
       <div className="navbar min-h-14 h-14 bg-stone-900 dark:bg-stone-700 flex justify-between">
         <div>
-          {/* Categories */}
+        <Link
+            href="/products"
+            className="hidden sm:inline-flex btn m-1 bg-stone-900 hover:bg-stone-900 dark:bg-stone-700 dark:hover:bg-stone-700 text-zinc-200 text-base border-none"
+          >
+            Productos
+          </Link>
           <Categories />
           <Link
             href="/"

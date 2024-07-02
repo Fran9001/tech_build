@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Hero from "@/components/Hero";
-import Carousel from "@/components/Carousel/Carousel";
 
 const Home = () => {
   return (
@@ -64,71 +63,6 @@ const Home = () => {
             />
           </svg>
         </Link>
-      </div>
-
-      <Carousel title="PRODUCTOS DESTACADOS" />
-      <div className="container px-4 sm:px-14 mt-20">
-        <h2 className="text-center pl-0 py-2 md:pl-4 md:py-4 rounded-t-2xl text-stone-700 text-3xl font-bold bg-gradient-to-r from-green-400 via-green-300 to-green-400 dark:from-green-700 dark:via-green-400 dark:to-green-700">
-          CATEGORÍAS DESTACADAS
-        </h2>
-        <div className="container bg-white dark:bg-stone-900 grid grid-rows-1 grid-cols-1 place-items-center md:grid-rows-2 md:grid-cols-2 gap-4 mb-16">
-          <div
-            className="h-60 w-full md:justify-self-start bg-black bg-cover dark:border-b-zinc-200 dark:border-b-4"
-            style={{
-              backgroundImage: `url(/images/Phones.jpg)`,
-            }}
-          >
-            <Link
-              href="/categories/phones"
-              className="grid place-items-center w-full h-full bg-black opacity-50 transition duration-300 hover:bg-stone-900"
-            >
-              <span className="text-4xl font-bold text-stone-400">
-                Celulares
-              </span>
-            </Link>
-          </div>
-          <div
-            className="h-60 w-full md:justify-self-start bg-black bg-cover lg:bg-center dark:border-b-zinc-200 dark:border-b-4"
-            style={{
-              backgroundImage: `url(/images/Notebook.jpg)`,
-            }}
-          >
-            <Link
-              href="/notebooks"
-              className="grid place-items-center w-full h-full bg-black opacity-50 transition duration-300 hover:bg-stone-900 "
-            >
-              <span className="text-4xl font-bold text-stone-400">
-                Notebooks
-              </span>
-            </Link>
-          </div>
-          <div
-            className="h-60 w-full md:justify-self-start bg-black bg-cover dark:border-b-zinc-200 dark:border-b-4"
-            style={{
-              backgroundImage: `url(/images/GPU.webp)`,
-            }}
-          >
-            <Link
-              href="/gpus"
-              className="grid place-items-center w-full h-full bg-black opacity-50 transition duration-300 hover:bg-stone-900 "
-            >
-              <span className="text-4xl font-bold text-stone-400">GPUs</span>
-            </Link>
-          </div>
-          <div
-            className="h-60 w-full md:justify-self-start bg-black bg-cover dark:border-b-zinc-200 dark:border-b-4"
-            style={{
-              backgroundImage: `url(/images/Gamer.jpg)`,
-            }}
-          >
-            <Link
-              href="/chairs"
-              className="grid place-items-center w-full h-full bg-black opacity-50 rounded-lg transition duration-300 hover:bg-stone-900 "
-            >
-              <span className="text-4xl font-bold text-stone-400">Sillas</span>
-            </Link>
-          </div>
-        </div>
       </div>
     </div>
   );
